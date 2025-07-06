@@ -13,18 +13,15 @@ public class Question58 {
     }
 
     public static int lengthOfLastWord(String s) {
-        String [] wordSore = s.split(" ");
-        int lastWordLength = 0;
+        s = s.trim();
+        int length = 0;
 
-        for(int i = wordSore.length - 1; i >= 0; i--){
-            if(Objects.equals(wordSore[i], " ")){
-                continue;
-            }
-            else {
-                lastWordLength = wordSore[i].length();
+        for(int i = s.length() - 1; i >= 0; i--){
+            if(s.charAt(i) == ' '){
                 break;
             }
+            length++;
         }
-        return lastWordLength;
+         return length;
     }
 }
