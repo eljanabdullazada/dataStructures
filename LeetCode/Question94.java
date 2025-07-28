@@ -3,16 +3,6 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
-    int val;
-    TreeNode left, right;
-
-
-    TreeNode(int val){
-        this.val = val;
-    }
-}
-
 public class Question94 {
     public static void main(String[] args){
         TreeNode root = new TreeNode(1);
